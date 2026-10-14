@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
+import '../pages/booking.page.dart';
 
 class CarCard extends StatelessWidget {
     final String name;
     final String price;
+    final int pricePerDay;
     final String imageUrl;
 
     const CarCard({
         super.key,
         required this.name,
         required this.price,
+        required this.pricePerDay,
         required this.imageUrl,
     });
 
@@ -73,7 +76,15 @@ class CarCard extends StatelessWidget {
                                 const SizedBox(height: 8),
                                 ElevatedButton(
                                     onPressed: () {
-
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => BookingPage(
+                                                    carName: name,
+                                                    pricePerDay: pricePerDay,
+                                                ),
+                                            ),
+                                        );
                                     },
                                     child: const Text('Detail'),
                                 ),

@@ -18,16 +18,19 @@ class CarList extends StatelessWidget {
                         CarCard(
                             name: 'Avanza Veloz',
                             price: 'Rp350.000',
+                            pricePerDay: 350000,
                             imageUrl: 'https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=500',
                         ),
                         CarCard(
                             name: 'Innova Reborn',
                             price: 'Rp500.000',
+                            pricePerDay: 500000,
                             imageUrl: 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=500',
                         ),
                         CarCard(
                             name: 'New Ertiga',
                             price: 'Rp350.000',
+                            pricePerDay: 350000,
                             imageUrl: 'https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=500',
                         ),
                     ],
